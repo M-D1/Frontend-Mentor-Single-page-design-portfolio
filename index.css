@@ -86,14 +86,14 @@ header p{
 }
 .box1 p {
  font-weight: 700;
- font-size: 24px;
+ font-size: 1.5rem;
  color: white;
  line-height: 30px;
  position: absolute;
  top: calc(50% - 30px/2 + 124px);
  /* top:303px; */
  
- padding-left: 24px;
+ padding-left: 1em;
 }
 .box1 div img{
  padding: 1.5em 1.5em 0 0;
@@ -118,12 +118,12 @@ header p{
 }
 .box2 p{
  font-weight: 700;
- font-size: 24px;
+ font-size: 1.5rem;
  line-height: 30px;
  color: white;
  position: absolute;
  top: calc(50% - 30px/2 + 42px);
- padding-left: 23px;
+ padding-left: 1em;
 }
 .box2 div img{
  padding: 24px 24px 0 0;
@@ -141,13 +141,13 @@ header p{
 }
 .box3 p{
  font-weight: 700;
- font-size: 24px;
+ font-size: 1.5rem;
  line-height: 30px;
  color: #fff;
- padding-left: 23px;
+ padding-left: 1em;
  position: absolute;
  top: calc(50% - 30px/2 + 42px);
 }
 .box3 div img{
- padding: 24px 24px 0 0;
+ padding: 1.5em 1.5em 0 0;
 }

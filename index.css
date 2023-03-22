@@ -1,0 +1,153 @@
+:root{
+ --Glactic-blue:#755cde;
+ --Summer-yellow:#f6a560;
+ --Pink:#f39e9e;
+ --Light-red:#eb7565;
+ --Cyan:#61c4b7;
+ --Dark-purple:#552049;
+ --Black:#030303;
+ --Medium-brown:#7a746e;
+ --Light-cream:#fff7f0;
+
+}
+*{
+ box-sizing: border-box;
+}
+body{
+ font-family: 'Plus Jakarta Sans', sans-serif;
+ background-color: var(--Light-cream);
+ padding: 0 1em;
+ margin: 0;
+
+}
+.container{
+ max-width:960px;
+ margin: 0 auto;
+ text-align: center;
+}
+/* HEADER */
+/* START */
+header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+}
+header p{
+ color: var(--Light-cream);
+ background-color: var(--Black);
+ padding: .6em 1.9em; /*8px  27px*/
+ border-radius: 50px;
+ font-size: 0.875rem; /*14px*/
+ font-weight: 700;
+ line-height: 28px;
+}
+/* END */
+
+/* First Section */
+/* START */
+
+.first-section{
+ margin-top: 2em;
+}
+
+.first-section h1{
+ font-weight: 700;
+ font-size: 2.25rem; /*36px*/
+ line-height: 45px;
+ color: var(--Black);
+ margin-bottom: .4em;
+}
+
+.first-section p{
+ font-weight: 500;
+ font-size: 1em;
+ line-height: 26px;
+ color: var(--Medium-brown);
+ width: 285px;
+ margin: 0 auto;
+}
+/* END */
+
+
+
+.box1{
+ background-color: var(--Glactic-blue);
+ border-radius: 8px;
+ width: 343px;
+ height:364px;
+
+ position: relative;
+ margin-bottom: 1em;
+}
+.box1 div{
+ display: flex;
+ justify-content: flex-end;
+}
+.box1 p {
+ font-weight: 700;
+ font-size: 24px;
+ color: white;
+ line-height: 30px;
+ position: absolute;
+ top: calc(50% - 30px/2 + 124px);
+ /* top:303px; */
+ 
+ padding-left: 24px;
+}
+.box1 div img{
+ padding: 1.5em 1.5em 0 0;
+}
+.box2-3-flex{
+ display: flex;
+ justify-content: center;
+}
+
+.box2{
+ background-color: var(--Summer-yellow);
+ width: 159px;
+ height: 182px;
+ border-radius: 8px;
+ position: relative;
+ margin-right: 1em;
+
+}
+.box2 div{
+ display: flex;
+ justify-content: flex-end;
+}
+.box2 p{
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 30px;
+ color: white;
+ position: absolute;
+ top: calc(50% - 30px/2 + 42px);
+ padding-left: 23px;
+}
+.box2 div img{
+ padding: 24px 24px 0 0;
+}
+.box3{
+ background-color: var(--Pink);
+ border-radius: 8px;
+ width: 159px;
+ height: 182px;
+ position: relative;
+}
+.box3 div{
+ display: flex;
+ justify-content: flex-end;
+}
+.box3 p{
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 30px;
+ color: #fff;
+ padding-left: 23px;
+ position: absolute;
+ top: calc(50% - 30px/2 + 42px);
+}
+.box3 div img{
+ padding: 24px 24px 0 0;
+}

@@ -182,6 +182,7 @@ span{
 }
 /* using this styles in info section and book section */
 .parley{
+ display: inline-block;
  background-color: var(--Light-red);
   border-radius: 28px;
   font-weight: 700;
@@ -250,7 +251,7 @@ span{
  margin-bottom:1.5em;
 }
 .booking .parley{
- display: inline-block;
+
  margin-top:.96em;
  margin-bottom: 1.23em;
  

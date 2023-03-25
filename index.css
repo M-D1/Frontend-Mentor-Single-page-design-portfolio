@@ -46,7 +46,8 @@ footer p{
 footer{
  margin-top: 2.5em;
 }
-footer img{
+footer img,
+header img{
  width: 80%;
 }
 /* END */
@@ -126,11 +127,12 @@ span{
 }
 .box2-3-container{
  display: flex;
- justify-content: flex-start;
- gap: 7em; /*112px*/
+ justify-content: space-between;
+ align-items: center;
+
 }
 .box2 ,.box3{
- width: 157%;
+ width: 159px;
  height: 159px;
  gap: 2em; /*32px*/
 }

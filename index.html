@@ -4,11 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- CSS FILE -->
   <link rel="stylesheet" href="index.css" />
+  <!-- ICON -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- GOOGLE FONTS -->
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- JS FILE -->
+  <script src="index.js" defer></script>
+
+  <!-- SWIPER JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" ></script>
+
+  
   
   <title>Frontend Mentor | Single-page design portfolio</title>
 </head>
@@ -23,62 +37,131 @@
       <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
     </section>
 
-    <section >
+    <section>
       <ul class="grid">
         <li>
           <a href="#">
             <div class="box1">
-              <div>
-                <img src="assets/pattern-graphic-design.svg" alt="" />
-              </div>
-
-              Graphic Design
+              <img src="assets/pattern-graphic-design.svg" alt="" class="grid-img" />
+              <span>Graphic Design</span>
             </div>
           </a>
         </li>
-       
-          
-        <div class="box2-3-flex">
-          
-            <div class="box2">
-              <div>
-                <img src="assets/pattern-ui-ux.svg" alt="" />
-              </div>
-              UI/UX
-            </div>
-          
-         
-            <div class="box3">
-              <div>
-                <img src="assets/pattern-apps.svg" alt="" />
-              </div>
-              Apps
-            </div>
-          
-          </div>
-          
-      <
-      <div class="box4">
-        <div>
-          <img src="assets/pattern-illustrations.svg" alt="">
+          <div class="box2-3-container">
+            <li>
+              <a href="#">
+                <div class="box2">
+                  <img src="assets/pattern-ui-ux.svg" alt="" class="grid-img"/>
+                  <span>UI/UX</span>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="box3">
+                  <img src="assets/pattern-apps.svg" alt="" class="grid-img" />
+                  <span>Apps</span>
+                </div>
+              </a>
+            </li>
         </div>
-        <p>Illustrations</p>
-      </div>
-        <div class="box5">
-          <div>
-            <img src="assets/pattern-photography.svg" alt="">
+
+        <li>
+          <a href="#">
+            <div class="box4">
+              <img src="assets/pattern-illustrations.svg" alt="" class="grid-img" />
+              <span>Illustrations</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <div class="box5">
+              <img src="assets/pattern-photography.svg" alt="" class="grid-img" />
+              <span>Photography</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <div class="box6">
+              <img src="assets/pattern-motion-graphics.svg" alt="" class="grid-img" />
+              <span>Motion Graphics</span>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+      <section class="info">
+        <img src="assets/image-amy.webp" alt="" class="avatar" />
+        <h2>I’m Amy, and I’d love to work on your next project</h2>
+        <p>I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations
+        to complete mobile apps. I’m also handy with a camera!</p>
+        <a class="parley" href="#">Free Consultation</a>
+      </section>
+
+      <section class="work">
+        <h1>My work</h1>
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="assets/image-slide-1.jpg" alt="" />
           </div>
-          <p>Photography</p>
+
+          <div class="swiper-slide">
+            <img src="assets/image-slide-2.jpg"  alt=""/>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="assets/image-slide-3.jpg" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="assets/image-slide-4.jpg" alt="" />
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="assets/image-slide-5.jpg" alt="" />
+          </div>
+
+          
+        </div>
+    
+        
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev">
+          <img src="assets/icon-arrow-left.svg" alt="" />
+        </div>
+        <div class="swiper-button-next">
+          <img src="assets/icon-arrow-right.svg"  alt=""/>
         </div>
         
-        <div class="box6">
-          <div>
-            <img src="assets/pattern-motion-graphics.svg" alt="">
-          </div>
-          <p>Motion Graphics</p>
+     
         </div>
-        </ul>
+      </section>
+
+      <section class="booking">
+        <h1>Book a call with me</h1>
+        <p>
+          I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a
+          free consultation. Then we can move forward from there.
+        </p>
+        <a class="parley">Free Consultation</a>
+      </section>
+
+      <footer>
+        <a href="#"><img src="assets/logo.svg" alt="" /></a>
+        <p>Free Consultation</p>
+      </footer>
+
     </section>
+    
 
    
     
@@ -98,21 +181,13 @@
  
   
 
-  I’m Amy, and I’d love to work on your next project
+ 
 
-  I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
-  to complete mobile apps. I’m also handy with a camera!
 
-  Free Consultation
+  
 
-  My Work
 
-  Book a call with me
 
-  I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
-  free consultation. Then we can move forward from there.
-
-  Free Consultation
 
   Free Consultation -->
 

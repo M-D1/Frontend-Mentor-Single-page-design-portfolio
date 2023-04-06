@@ -21,7 +21,7 @@ body{
 
 }
 .container{
- max-width:960px;
+ max-width:1440px;
  margin: 0 auto;
  text-align: center;
 }
@@ -50,6 +50,7 @@ footer img,
 header img{
  width: 80%;
 }
+
 /* END */
 
 /* First Section */
@@ -212,9 +213,10 @@ span{
   padding: .64em 2em; /*8.96px top ,bottom and 28px left,right */
 }
 
+
 /* END */
 
-/* Swiper js */
+/* Carousel */
 /* Start */
 
 .work h1{
@@ -224,29 +226,24 @@ span{
  margin-top: 4.1em; /*98.39 px*/
  margin-bottom: 1.3em; /*31.2px*/
 }
-
-.swiper-slide img{
- width: 100%;
- border-radius: 8px;
+.glide__slide img{
+  width:100%;
+  border-radius: 8px;
 }
 
-.swiper-button-prev::after{
- display: none;
- 
- 
+ul{
+  list-style: none;
 }
 
-
-
-.swiper-button-next::after{
- display: none;
-  
-}
-.swiper-button-next,.swiper-button-prev{
+button{
  border-radius: 50px;
  background-color: var(--Black);
- padding: 1.5em; /*24px*/
+ padding: 1.5em; 
+  margin: 1em;
+  cursor: pointer;
 }
+
+
 /* END */
 
 .booking{
@@ -281,6 +278,12 @@ span{
 /* tablets */
 
 @media(min-width:708px){
+  .glide__slide img{
+    width: 90%;
+  }
+  .carousel img{
+    width: calc(100% / 2);
+  }
   .first-section h1{
     font-size: 2.75rem;
   }
@@ -363,6 +366,12 @@ span{
 }
 
 @media(min-width:882px){
+  /* .glide__slide img{
+    width: 80%;
+  } */
+  .carousel img{
+    width: calc(100% / 3);
+  }
   .grid{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
@@ -424,4 +433,18 @@ span{
     margin-left: auto;
     margin-top: 3em;
   }
+}
+/* hover state and focus state */
+
+header a p:hover,
+header a p:focus,
+footer a p:hover,
+footer a p:focus,
+button:hover,
+button:focus {
+  background-color: var(--Glactic-blue);
+}
+.parley:hover,
+.parley:focus{
+  background-color: var(--Summer-yellow);
 }

@@ -17,10 +17,13 @@
   <!-- JS FILE -->
   <script src="index.js" defer></script>
 
-  <!-- SWIPER JS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- Glide JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css"
+    integrity="sha512-ShLuspGzRsTiMlQ2Rg0e+atjy/gVQr3oYKnKmQkHQ6sxcnDAEOtOaPz2rRmeygV2CtnwUawDyHkGgH4zUbP3Hw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" ></script>
+
 
   
   
@@ -47,7 +50,7 @@
             </div>
           </a>
         </li>
-          <!-- <div class="box2-3-container"> -->
+       
             <li class="grid-2">
               <a href="#">
                 <div class="box2">
@@ -108,44 +111,52 @@
 
       <section class="work">
         <h1>My work</h1>
-        <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-           <a href="#"> <img src="assets/image-slide-1.jpg" alt="" /> </a>
+
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img src="assets/image-slide-1.jpg" alt="">
+              </li>
+              <li class="glide__slide">
+                <img src="assets/image-slide-2.jpg" alt="">
+              </li>
+              <li class="glide__slide">
+                <img src="assets/image-slide-3.jpg" alt="">
+              </li>
+              <li class="glide__slide">
+                <img src="assets/image-slide-4.jpg" alt="">
+              </li>
+              <li class="glide__slide">
+                <img src="assets/image-slide-5.jpg" alt="">
+              </li>
+             
+            </ul>
           </div>
 
-          <div class="swiper-slide">
-           <a href="#"> <img src="assets/image-slide-2.jpg"  alt=""/> </a>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <img src="assets/icon-arrow-left.svg" alt="">
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <img src="assets/icon-arrow-right.svg" alt="">
+            </button>
           </div>
-
-          <div class="swiper-slide">
-            <a href="#"> <img src="assets/image-slide-3.jpg" alt="" /> </a>
-          </div>
-
-          <div class="swiper-slide">
-            <a href="#"><img src="assets/image-slide-4.jpg" alt="" /> </a>
-          </div>
-          
-          <div class="swiper-slide">
-            <a href="#"> <img src="assets/image-slide-5.jpg" alt="" /> </a>
-          </div>
-
-          
         </div>
-    
-        
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev">
-          <img src="assets/icon-arrow-left.svg" alt="" />
-        </div>
-        <div class="swiper-button-next">
-          <img src="assets/icon-arrow-right.svg"  alt=""/>
-        </div>
-        
-     
-        </div>
+      
+      
+        <!-- <section class="wrapper">
+          <section class="carousel">
+            <img src="assets/image-slide-1.jpg" alt="">
+            <img src="assets/image-slide-2.jpg" alt="">
+            <img src="assets/image-slide-3.jpg" alt="">
+            <img src="assets/image-slide-4.jpg" alt="">
+            <img src="assets/image-slide-5.jpg" alt="">
+         
+          </section>
+          <button class="arrow" id="left"><img src="assets/icon-arrow-left.svg" alt=""  ></button>
+          <button class="arrow" id="righ"> <img src="assets/icon-arrow-right.svg" alt=""  ></button>
+        </section> -->
       </section>
 
       <section class="booking">
@@ -170,7 +181,33 @@
 
    
     
-
+      <script >
+        const options = {
+          type:'carousel',
+          
+          perView:1.2,
+          focusAt:'center',
+          
+          breakpoints:{
+           2000:{
+            perView:2.3,
+            gap:-20
+           },
+           882:{
+            perView:1.2,
+            gap:-40
+            
+           },
+           707:{
+            gap:20
+           }
+          }
+          
+         
+          
+        }
+        new Glide('.glide',options).mount()
+      </script>
 
   </main>
 

@@ -123,10 +123,9 @@ header img{
 .box4,
 .box5,
 .box6{
- display: flex;
- flex-direction: column;
- border-radius: 8px;
-
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
   padding: 1.5rem;
   height: 100%;
   width: 100%;
@@ -152,7 +151,7 @@ span{
  font-weight: 700;
  color: white;
  align-self: flex-start;
- /* padding-left: 1em; 24px */
+ 
 }
 
 
@@ -366,9 +365,7 @@ button{
 }
 
 @media(min-width:882px){
-  /* .glide__slide img{
-    width: 80%;
-  } */
+ 
   .carousel img{
     width: calc(100% / 3);
   }

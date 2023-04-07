@@ -280,9 +280,7 @@ button{
   .glide__slide img{
     width: 90%;
   }
-  .carousel img{
-    width: calc(100% / 2);
-  }
+ 
   .first-section h1{
     font-size: 2.75rem;
   }
@@ -357,18 +355,18 @@ button{
  }
  .booking h1{
   font-size: 2em;
+ 
  }
  .booking p{
   font-size: 1.125rem;
+ 
  }
  
 }
 
 @media(min-width:882px){
  
-  .carousel img{
-    width: calc(100% / 3);
-  }
+ 
   .grid{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
@@ -422,6 +420,7 @@ button{
   }
   .booking h1{
     font-size: 2.5rem;
+    margin-top: .5em;
   }
   .booking div{
     width: 50%;

@@ -218,7 +218,7 @@ span{
 /* Carousel */
 /* Start */
 
-.work h1{
+.work h3{
  font-weight: 700;
  font-size: 1.5rem; /*24px*/
  color: var(--Black);
@@ -251,7 +251,7 @@ button{
  padding: 1em;
  margin-top: 6.25em;
 }
-.booking h1{
+.booking h4{
  color: var(--Light-cream);
  font-weight: 700;
  font-size: 1.625rem;
